@@ -20,7 +20,7 @@ include { CHECKV_ENDTOEND } from './modules/checkv'
 include { SEQFU_CAT; SEQFU_RELABEL } from './modules/seqfu'
 
 reads = make_input(params.reads)
-reads.view()
+
 // Print help message, supply typical command line usage for the pipeline
 if (params.help) {
    log.info paramsHelp("Parameters: --reads input_file.csv")
